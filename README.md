@@ -1,3 +1,6 @@
+# 我们在https://github.com/ModalMinds/MM-EUREKA中公布了我们的最新进展，包括更强大的代码，更好的模型，以及包括数据在内的全部开源！
+
+
 # R1-Multimodal-Journey
 
 **Environment**
