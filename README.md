@@ -1,4 +1,4 @@
-# 我们在https://github.com/ModalMinds/MM-EUREKA中公布了我们的最新进展，包括更强大的代码，更好的模型，以及包括数据在内的全部开源！
+# We announced our latest progress at https://github.com/ModalMinds/MM-EUREKA, including more powerful code, better models, and open source everything including the data!
 
 
 # R1-Multimodal-Journey
