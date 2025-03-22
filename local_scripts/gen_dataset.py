@@ -7,6 +7,7 @@ import pandas as pd
 from PIL import Image as I
 from datasets import Dataset, Features, Value, Image
 from tqdm import tqdm
+from huggingface_hub import HfApi, HfFolder
 
 random.seed(42)
 
@@ -55,8 +56,17 @@ with open(input_file, 'r') as f:
     data_all = json.load(f)
 
 data_all_filtered = []
+root_dir_1 = "/ocean/projects/cis210027p/qwang20/geovlm/GeoQA+/GeoQA+/GeoQA-train"
+root_dir_2 = "/ocean/projects/cis210027p/qwang20/geovlm/GeoQA+/GeoQA+/Mix-train"
+root_dir_3 = "/ocean/projects/cis210027p/qwang20/geovlm/GeoQA+/GeoQA+/test"
 for data_tmp in tqdm(data_all, desc="Processing images", unit="image"):
-    image_path = os.path.join('/path/to/image/folder', data_tmp['image'])
+    data_tmp_image = data_tmp['image'].replace('geoqa_plus/', '')
+    if os.path.exists(os.path.join(root_dir_1, data_tmp_image)):
+        image_path = os.path.join(root_dir_1, data_tmp_image)
+    elif os.path.exists(os.path.join(root_dir_2, data_tmp_image)):
+        image_path = os.path.join(root_dir_2, data_tmp_image)
+    elif os.path.exists(os.path.join(root_dir_3, data_tmp_image)):
+        image_path = os.path.join(root_dir_3, data_tmp_image)
     is_valid = has_valid_image_size_from_path(image_path)
     if is_valid == True:
         data_all_filtered.append(data_tmp)
@@ -68,7 +78,13 @@ print('len(data_all_filtered): ', len(data_all_filtered))
 
 random.shuffle(data_all_filtered)
 for item in data_all_filtered:
-    image_path = os.path.join('/path/to/image/folder', item.get('image'))
+    data_tmp_image = data_tmp['image'].replace('geoqa_plus/', '')
+    if os.path.exists(os.path.join(root_dir_1, data_tmp_image)):
+        image_path = os.path.join(root_dir_1, data_tmp_image)
+    elif os.path.exists(os.path.join(root_dir_2, data_tmp_image)):
+        image_path = os.path.join(root_dir_2, data_tmp_image)
+    elif os.path.exists(os.path.join(root_dir_3, data_tmp_image)):
+        image_path = os.path.join(root_dir_3, data_tmp_image)
     problem = item['question']
     solution = format_math_explanation(item['answer'])
 

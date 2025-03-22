@@ -1,0 +1,391 @@
+W0321 21:40:18.470000 24445 /ocean/projects/cis210027p/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/run.py:793] 
+W0321 21:40:18.470000 24445 /ocean/projects/cis210027p/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/run.py:793] *****************************************
+W0321 21:40:18.470000 24445 /ocean/projects/cis210027p/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0321 21:40:18.470000 24445 /ocean/projects/cis210027p/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/run.py:793] *****************************************
+W0321 21:40:21.614000 24445 /ocean/projects/cis210027p/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py:704] Received 2 death signal, shutting down workers
+W0321 21:40:21.614000 24445 /ocean/projects/cis210027p/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 24496 closing signal SIGINT
+Traceback (most recent call last):
+  File "/ocean/projects/cis210027p/qwang20/R1-Multimodal-Journey/src/open_r1/grpo_vllm.py", line 23, in <module>
+    from trl import GRPOConfig, GRPOTrainer, ModelConfig, ScriptArguments, TrlParser, get_peft_config
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/trl/import_utils.py", line 102, in __getattr__
+    value = getattr(module, name)
+  W0321 21:40:21.615000 24445 /ocean/projects/cis210027p/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 24497 closing signal SIGINT
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/trl/import_utils.py", line 101, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+Traceback (most recent call last):
+    File "/ocean/projects/cis210027p/qwang20/R1-Multimodal-Journey/src/open_r1/grpo_vllm.py", line 23, in <module>
+           ^^^^^^^^^^^^^    ^from trl import GRPOConfig, GRPOTrainer, ModelConfig, ScriptArguments, TrlParser, get_peft_config^
+^^^^^^  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/trl/import_utils.py", line 102, in __getattr__
+^^^^^^^^^^^^^^^^^W0321 21:40:21.615000 24445 /ocean/projects/cis210027p/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 24498 closing signal SIGINT
+^    ^value = getattr(module, name)^
+^^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/trl/import_utils.py", line 111, in _get_module
+            ^    ^return importlib.import_module("." + module_name, self.__name__)^
+^^^^ ^ ^ ^ ^ ^  ^Traceback (most recent call last):
+ ^^ ^  File "/ocean/projects/cis210027p/qwang20/R1-Multimodal-Journey/src/open_r1/grpo_vllm.py", line 23, in <module>
+ ^ ^^^^^^^^
+^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/trl/import_utils.py", line 101, in __getattr__
+^^^    ^from trl import GRPOConfig, GRPOTrainer, ModelConfig, ScriptArguments, TrlParser, get_peft_config^
+^^    ^module = self._get_module(self._class_to_module[name])
+^  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+^ ^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/trl/import_utils.py", line 102, in __getattr__
+ ^ ^W0321 21:40:21.616000 24445 /ocean/projects/cis210027p/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 24499 closing signal SIGINT
+ ^ ^^     ^ value = getattr(module, name)^ 
+^ ^ ^ ^  ^  ^ ^^ ^^ ^^ ^^ ^^ Traceback (most recent call last):
+^^  ^^  File "/ocean/projects/cis210027p/qwang20/R1-Multimodal-Journey/src/open_r1/grpo_vllm.py", line 23, in <module>
+ ^^ ^^^^^^^^^^^^^^^^^    ^^^from trl import GRPOConfig, GRPOTrainer, ModelConfig, ScriptArguments, TrlParser, get_peft_config^^^
+^^^^^^^^^  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+^^^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/trl/import_utils.py", line 102, in __getattr__
+^^^^^^^^^^^^^^^^    ^^
+value = getattr(module, name)^^^
+^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/importlib/__init__.py", line 90, in import_module
+^^^
+ ^ ^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/trl/import_utils.py", line 101, in __getattr__
+ ^ ^     ^return _bootstrap._gcd_import(name[level:], package, level) ^
+ ^     ^module = self._get_module(self._class_to_module[name])  ^
+  ^  ^   ^^  ^^  ^^  
+^   ^   File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/trl/import_utils.py", line 111, in _get_module
+ ^  ^ ^^ ^^^ ^    ^ ^return importlib.import_module("." + module_name, self.__name__)^ ^
+^ ^^^^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^
+^ ^^ ^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/trl/import_utils.py", line 101, in __getattr__
+^ ^^ ^^^^^^^^^    ^^^module = self._get_module(self._class_to_module[name])^^^
+^^^^^^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/trl/import_utils.py", line 111, in _get_module
+^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/trl/trainer/grpo_trainer.py", line 31, in <module>
+^^^^^^    ^^return importlib.import_module("." + module_name, self.__name__)
+^^    ^^from transformers import (^ ^
+^ ^^^   File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+^^  ^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1957, in __getattr__
+ ^^ ^^ ^^ ^^ ^^ ^^^^^^^^^^
+^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/importlib/__init__.py", line 90, in import_module
+^^^^^^^^^^^
+^^      File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/trl/import_utils.py", line 111, in _get_module
+^return _bootstrap._gcd_import(name[level:], package, level)^
+^^^^ ^     ^ return importlib.import_module("." + module_name, self.__name__)^ 
+^ ^ ^  ^  ^  ^  ^  ^^ ^^ ^^ ^^ ^^ ^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/importlib/__init__.py", line 90, in import_module
+^^^^^^^^^^^^    ^^return _bootstrap._gcd_import(name[level:], package, level)^^
+^^^^^^ ^^ ^^ ^^ ^^ ^^ ^^ ^^ ^^ ^^ ^^ ^^^^
+^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/trl/trainer/grpo_trainer.py", line 31, in <module>
+^^^^^^^^^^^^    ^^from transformers import (^^
+
+^^  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/importlib/__init__.py", line 90, in import_module
+^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1957, in __getattr__
+^^^^^^^^    ^return _bootstrap._gcd_import(name[level:], package, level)^
+^^^^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/trl/trainer/grpo_trainer.py", line 31, in <module>
+^^^^^^^^^^^^    ^from transformers import (^
+^^  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1957, in __getattr__
+^^^^^^^^^^^^^^^^^^^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/trl/trainer/grpo_trainer.py", line 31, in <module>
+    from transformers import (
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1957, in __getattr__
+    value = getattr(module, name)    
+value = getattr(module, name)    
+value = getattr(module, name) 
+                              ^  ^ ^^ ^^ ^^^^^^^^^    ^^^value = getattr(module, name)^^^
+^^^^^^^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^
+^ ^^ 
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1956, in __getattr__
+^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1956, in __getattr__
+^
+^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1956, in __getattr__
+^^^^^^^^^^^^^^^^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1956, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+           module = self._get_module(self._class_to_module[name]) 
+     ^ ^ ^     ^module = self._get_module(self._class_to_module[name]) ^
+ ^ ^      ^  module = self._get_module(self._class_to_module[name])^  
+^  ^   ^   ^  ^^  ^^  ^^  ^^  ^^  ^^  ^^ ^^^ ^^^ ^^^ ^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1968, in _get_module
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1968, in _get_module
+^^^^    ^^return importlib.import_module("." + module_name, self.__name__)^^
+^^^
+^ ^   File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1968, in _get_module
+^ ^ 
+    File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1968, in _get_module
+     ^^^^^^^^    ^return importlib.import_module("." + module_name, self.__name__)^
+^^^^ ^ ^ ^ ^ ^ ^     ^ return importlib.import_module("." + module_name, self.__name__)^ 
+^ ^     ^^return importlib.import_module("." + module_name, self.__name__) ^^
+ ^^ ^^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^^^ ^^^ ^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/importlib/__init__.py", line 90, in import_module
+^^^^^^^^^^^^^^    ^^^return _bootstrap._gcd_import(name[level:], package, level)^^^
+^^^^^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^^^^^^^^^^^^
+^^^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/importlib/__init__.py", line 90, in import_module
+^^^^^^^^^^^^^^    ^^^return _bootstrap._gcd_import(name[level:], package, level)^^^
+^^^^^^
+^ ^^^   File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/importlib/__init__.py", line 90, in import_module
+^^ ^^ ^
+ ^ ^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/importlib/__init__.py", line 90, in import_module
+     ^return _bootstrap._gcd_import(name[level:], package, level) ^
+ ^ ^      ^^return _bootstrap._gcd_import(name[level:], package, level) ^^
+ ^^ ^^  ^^  ^^  ^^  ^^  ^^  ^^  ^^^ ^^^ ^^^ ^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/models/auto/modeling_auto.py", line 22, in <module>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/models/auto/modeling_auto.py", line 22, in <module>
+^^^^^^^^^^^^^^^^^
+^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/models/auto/modeling_auto.py", line 22, in <module>
+
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/models/auto/modeling_auto.py", line 22, in <module>
+        from .auto_factory import (    from .auto_factory import (
+from .auto_factory import (
+
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 40, in <module>
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 40, in <module>
+      File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 40, in <module>
+from .auto_factory import (
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 40, in <module>
+    from ...generation import GenerationMixin    
+    from ...generation import GenerationMixinfrom ...generation import GenerationMixin
+
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1956, in __getattr__
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1956, in __getattr__
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1956, in __getattr__
+    from ...generation import GenerationMixin
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1956, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+    module = self._get_module(self._class_to_module[name])    
+ module = self._get_module(self._class_to_module[name]) 
+                       module = self._get_module(self._class_to_module[name])   
+             ^  ^^  ^^  ^^  ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^
+^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1968, in _get_module
+^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1968, in _get_module
+^^^
+^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1968, in _get_module
+^^^^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1968, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+    return importlib.import_module("." + module_name, self.__name__)
+             return importlib.import_module("." + module_name, self.__name__)   
+        return importlib.import_module("." + module_name, self.__name__)   
+   ^  ^   ^  ^^  ^^  ^^  ^^  ^^  ^^  ^^ ^^^ ^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/importlib/__init__.py", line 90, in import_module
+
+^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/importlib/__init__.py", line 90, in import_module
+^^^^    ^^return _bootstrap._gcd_import(name[level:], package, level)^^
+^    ^^^return _bootstrap._gcd_import(name[level:], package, level)
+ ^
+ 
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/importlib/__init__.py", line 90, in import_module
+     File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/importlib/__init__.py", line 90, in import_module
+              return _bootstrap._gcd_import(name[level:], package, level)      
+ return _bootstrap._gcd_import(name[level:], package, level)^ 
+^  ^  ^   ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/generation/utils.py", line 30, in <module>
+^^^^^^^^
+^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/generation/utils.py", line 30, in <module>
+^^^^^^^^^^
+^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/generation/utils.py", line 30, in <module>
+
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/generation/utils.py", line 30, in <module>
+    from transformers.generation.candidate_generator import AssistantVocabTranslatorCache        
+from transformers.generation.candidate_generator import AssistantVocabTranslatorCachefrom transformers.generation.candidate_generator import AssistantVocabTranslatorCache
+
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/generation/candidate_generator.py", line 29, in <module>
+      File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/generation/candidate_generator.py", line 29, in <module>
+from transformers.generation.candidate_generator import AssistantVocabTranslatorCache  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/generation/candidate_generator.py", line 29, in <module>
+
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/generation/candidate_generator.py", line 29, in <module>
+    from ..cache_utils import DynamicCache        
+from ..cache_utils import DynamicCachefrom ..cache_utils import DynamicCache
+
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/cache_utils.py", line 11, in <module>
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/cache_utils.py", line 11, in <module>
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/cache_utils.py", line 11, in <module>
+    from ..cache_utils import DynamicCache
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/cache_utils.py", line 11, in <module>
+    from transformers.pytorch_utils import is_torch_greater_or_equal_than_2_6        
+from transformers.pytorch_utils import is_torch_greater_or_equal_than_2_6from transformers.pytorch_utils import is_torch_greater_or_equal_than_2_6
+
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/pytorch_utils.py", line 49, in <module>
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/pytorch_utils.py", line 49, in <module>
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/pytorch_utils.py", line 49, in <module>
+    from transformers.pytorch_utils import is_torch_greater_or_equal_than_2_6
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/transformers/pytorch_utils.py", line 49, in <module>
+    from torch.distributed.tensor import Replicate        
+from torch.distributed.tensor import Replicatefrom torch.distributed.tensor import Replicate
+
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/__init__.py", line 4, in <module>
+    from torch.distributed.tensor import Replicate  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/__init__.py", line 4, in <module>
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/__init__.py", line 4, in <module>
+
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/__init__.py", line 4, in <module>
+    import torch.distributed.tensor._ops  # force import all built-in dtensor ops
+        import torch.distributed.tensor._ops  # force import all built-in dtensor opsimport torch.distributed.tensor._ops  # force import all built-in dtensor ops 
+
+      ^      ^import torch.distributed.tensor._ops  # force import all built-in dtensor ops  ^
+^ ^^^^^ ^^^ ^^^ ^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/_ops/__init__.py", line 2, in <module>
+^^
+^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/_ops/__init__.py", line 2, in <module>
+^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/_ops/__init__.py", line 2, in <module>
+^^^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/_ops/__init__.py", line 2, in <module>
+    from ._conv_ops import *  # noqa: F403
+    ^^^^^^^^^    ^from ._conv_ops import *  # noqa: F403    ^
+from ._conv_ops import *  # noqa: F403^
+^ ^  ^      ^  from ._conv_ops import *  # noqa: F403^^ 
+^^^^^^ ^^^ ^^^ ^^^ ^^^^^^^^^
+^^^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/_ops/_conv_ops.py", line 7, in <module>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ^
+from torch.distributed.tensor._dtensor_spec import DTensorSpec, TensorMeta^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/_ops/_conv_ops.py", line 7, in <module>
+
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/_ops/_conv_ops.py", line 7, in <module>
+^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/_dtensor_spec.py", line 6, in <module>
+^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/_ops/_conv_ops.py", line 7, in <module>
+    from torch.distributed.tensor.placement_types import (
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/placement_types.py", line 10, in <module>
+    from torch.distributed.tensor._dtensor_spec import DTensorSpec, TensorMeta    
+from torch.distributed.tensor._dtensor_spec import DTensorSpec, TensorMeta
+    from torch.distributed.tensor._dtensor_spec import DTensorSpec, TensorMeta  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/_dtensor_spec.py", line 6, in <module>
+
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/_dtensor_spec.py", line 6, in <module>
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/_dtensor_spec.py", line 6, in <module>
+    from torch.distributed.tensor._collective_utils import (
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/_collective_utils.py", line 31, in <module>
+    @torch.library.register_fake("_dtensor::shard_dim_alltoall")
+     from torch.distributed.tensor.placement_types import (     
+from torch.distributed.tensor.placement_types import (     
+ from torch.distributed.tensor.placement_types import (  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/placement_types.py", line 10, in <module>
+ 
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/placement_types.py", line 10, in <module>
+^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/placement_types.py", line 10, in <module>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    ^from torch.distributed.tensor._collective_utils import (^
+^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/_collective_utils.py", line 31, in <module>
+^^^^^    ^from torch.distributed.tensor._collective_utils import (^
+^        ^@torch.library.register_fake("_dtensor::shard_dim_alltoall")from torch.distributed.tensor._collective_utils import (  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/_collective_utils.py", line 31, in <module>
+^
+
+^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/tensor/_collective_utils.py", line 31, in <module>
+^ ^     ^@torch.library.register_fake("_dtensor::shard_dim_alltoall")  ^
+     ^@torch.library.register_fake("_dtensor::shard_dim_alltoall")^^
+^ ^^  
+^   ^   File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/library.py", line 795, in register
+^^ ^^ ^^ ^^^^^^^^^^^^^^    ^^^use_lib._register_fake(op_name, func, _stacklevel=stacklevel + 1)^^^
+^^^^^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/library.py", line 163, in _register_fake
+^^^^^^^^^^^^    ^^^source = torch._library.utils.get_source(_stacklevel + 1)^^^
+^^^^^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/library.py", line 795, in register
+^^^^^^^^
+^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/library.py", line 795, in register
+^^^
+^    ^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/library.py", line 795, in register
+use_lib._register_fake(op_name, func, _stacklevel=stacklevel + 1)^
+^^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/library.py", line 163, in _register_fake
+^^^^    ^use_lib._register_fake(op_name, func, _stacklevel=stacklevel + 1)^
+^    ^    source = torch._library.utils.get_source(_stacklevel + 1)^use_lib._register_fake(op_name, func, _stacklevel=stacklevel + 1)
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/library.py", line 163, in _register_fake
+^
+
+    File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/_library/utils.py", line 42, in get_source
+   File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/library.py", line 163, in _register_fake
+       source = torch._library.utils.get_source(_stacklevel + 1) 
+      source = torch._library.utils.get_source(_stacklevel + 1)  
+      ^  ^  ^  ^  ^  ^  ^  ^      ^ frame = inspect.getframeinfo(sys._getframe(stacklevel)) ^ 
+ ^^  ^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/_library/utils.py", line 42, in get_source
+^^^^^^^^^^^^^^^^^^^^^^^^^
+    ^^frame = inspect.getframeinfo(sys._getframe(stacklevel))^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/_library/utils.py", line 42, in get_source
+
+^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/_library/utils.py", line 42, in get_source
+^ ^ ^     ^ frame = inspect.getframeinfo(sys._getframe(stacklevel))^     
+^ frame = inspect.getframeinfo(sys._getframe(stacklevel))^ 
+
+       File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/inspect.py", line 1718, in getframeinfo
+       ^  ^  ^  ^  ^  ^  ^  ^  ^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/inspect.py", line 1718, in getframeinfo
+^^^^^^^^^^^^
+^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/inspect.py", line 1718, in getframeinfo
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/inspect.py", line 1718, in getframeinfo
+    lines, lnum = findsource(frame)        
+lines, lnum = findsource(frame)lines, lnum = findsource(frame)
+
+                       lines, lnum = findsource(frame)   
+                            ^   ^   ^   ^   ^ ^ ^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^ ^^^^^^^^^^^^^^^^^^
+^^^^^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/inspect.py", line 1090, in findsource
+^^^^^^^
+^^^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/inspect.py", line 1090, in findsource
+^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/inspect.py", line 1090, in findsource
+^^^^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/inspect.py", line 1090, in findsource
+    module = getmodule(object, file)    
+module = getmodule(object, file)
+              module = getmodule(object, file)  
+          module = getmodule(object, file)   
+          ^  ^^  ^^  ^^  ^^  ^^  ^^  ^^  ^^  ^^^ ^^^ ^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^
+^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/inspect.py", line 1016, in getmodule
+^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/inspect.py", line 1016, in getmodule
+^^^^^^^^^^^^
+^^  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/inspect.py", line 1016, in getmodule
+^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/inspect.py", line 1016, in getmodule
+    os.path.realpath(f)] = module.__name__
+    os.path.realpath(f)] = module.__name__ 
+   ^ ^ ^ ^ ^^^^    ^^^os.path.realpath(f)] = module.__name__    ^^
+os.path.realpath(f)] = module.__name__^^
+^^ ^^^  ^^  ^^  ^^^ ^^^^^^^^^^^^
+^^^^^^  File "<frozen posixpath>", line 427, in realpath
+^^^^^^  File "<frozen posixpath>", line 462, in _joinrealpath
+^^^^^^KeyboardInterrupt^
+^^^
+^^  File "<frozen posixpath>", line 427, in realpath
+^^^^  File "<frozen posixpath>", line 487, in _joinrealpath
+^^^^  File "<frozen posixpath>", line 462, in _joinrealpath
+^^^^KeyboardInterrupt^
+
+
+  File "<frozen posixpath>", line 427, in realpath
+  File "<frozen posixpath>", line 427, in realpath
+  File "<frozen posixpath>", line 462, in _joinrealpath
+  File "<frozen posixpath>", line 487, in _joinrealpath
+KeyboardInterrupt  File "<frozen posixpath>", line 462, in _joinrealpath
+
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 260, in launch_agent
+    result = agent.run()
+             ^^^^^^^^^^^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/elastic/metrics/api.py", line 137, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py", line 696, in run
+    result = self._invoke_run(role)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py", line 855, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 84, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 24445 got signal: 2

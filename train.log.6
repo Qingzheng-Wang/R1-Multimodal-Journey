@@ -1,0 +1,89 @@
+usage: torchrun [-h] [--nnodes NNODES] [--nproc-per-node NPROC_PER_NODE]
+                [--rdzv-backend RDZV_BACKEND] [--rdzv-endpoint RDZV_ENDPOINT]
+                [--rdzv-id RDZV_ID] [--rdzv-conf RDZV_CONF] [--standalone]
+                [--max-restarts MAX_RESTARTS]
+                [--monitor-interval MONITOR_INTERVAL]
+                [--start-method {spawn,fork,forkserver}] [--role ROLE] [-m]
+                [--no-python] [--run-path] [--log-dir LOG_DIR] [-r REDIRECTS]
+                [-t TEE] [--local-ranks-filter LOCAL_RANKS_FILTER]
+                [--node-rank NODE_RANK] [--master-addr MASTER_ADDR]
+                [--master-port MASTER_PORT] [--local-addr LOCAL_ADDR]
+                [--logs-specs LOGS_SPECS]
+                training_script ...
+torchrun: error: argument --node-rank/--node_rank: invalid int value: ''
+W0321 21:03:58.537000 22459012233024 torch/distributed/run.py:779] 
+W0321 21:03:58.537000 22459012233024 torch/distributed/run.py:779] *****************************************
+W0321 21:03:58.537000 22459012233024 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0321 21:03:58.537000 22459012233024 torch/distributed/run.py:779] *****************************************
+[2025-03-21 21:04:05,063] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-03-21 21:04:05,082] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-03-21 21:04:05,088] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-03-21 21:04:05,091] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Traceback (most recent call last):
+  File "/ocean/projects/cis210027p/qwang20/R1-Multimodal-Journey/src/open_r1/grpo_vllm.py", line 25, in <module>
+Traceback (most recent call last):
+  File "/ocean/projects/cis210027p/qwang20/R1-Multimodal-Journey/src/open_r1/grpo_vllm.py", line 25, in <module>
+    from trainer.grpo_trainer_vllm import Qwen2VLGRPOTrainer
+  File "/ocean/projects/cis210027p/qwang20/R1-Multimodal-Journey/src/open_r1/trainer/__init__.py", line 1, in <module>
+Traceback (most recent call last):
+  File "/ocean/projects/cis210027p/qwang20/R1-Multimodal-Journey/src/open_r1/grpo_vllm.py", line 25, in <module>
+    from trainer.grpo_trainer_vllm import Qwen2VLGRPOTrainer
+Traceback (most recent call last):
+  File "/ocean/projects/cis210027p/qwang20/R1-Multimodal-Journey/src/open_r1/trainer/__init__.py", line 1, in <module>
+  File "/ocean/projects/cis210027p/qwang20/R1-Multimodal-Journey/src/open_r1/grpo_vllm.py", line 25, in <module>
+    from trainer.grpo_trainer_vllm import Qwen2VLGRPOTrainer
+  File "/ocean/projects/cis210027p/qwang20/R1-Multimodal-Journey/src/open_r1/trainer/__init__.py", line 1, in <module>
+    from trainer.grpo_trainer_vllm import Qwen2VLGRPOTrainer
+  File "/ocean/projects/cis210027p/qwang20/R1-Multimodal-Journey/src/open_r1/trainer/__init__.py", line 1, in <module>
+    from .grpo_trainer_vllm import Qwen2VLGRPOTrainer
+  File "/ocean/projects/cis210027p/qwang20/R1-Multimodal-Journey/src/open_r1/trainer/grpo_trainer_vllm.py", line 50, in <module>
+    from .grpo_trainer_vllm import Qwen2VLGRPOTrainer
+  File "/ocean/projects/cis210027p/qwang20/R1-Multimodal-Journey/src/open_r1/trainer/grpo_trainer_vllm.py", line 50, in <module>
+    from .grpo_trainer_vllm import Qwen2VLGRPOTrainer
+  File "/ocean/projects/cis210027p/qwang20/R1-Multimodal-Journey/src/open_r1/trainer/grpo_trainer_vllm.py", line 50, in <module>
+    from .grpo_trainer_vllm import Qwen2VLGRPOTrainer
+  File "/ocean/projects/cis210027p/qwang20/R1-Multimodal-Journey/src/open_r1/trainer/grpo_trainer_vllm.py", line 50, in <module>
+    from vllm import LLM, SamplingParams
+    from vllm import LLM, SamplingParams    
+from vllm import LLM, SamplingParamsModuleNotFoundError
+: ModuleNotFoundErrorNo module named 'vllm': 
+ModuleNotFoundErrorNo module named 'vllm': 
+    No module named 'vllm'from vllm import LLM, SamplingParams
+
+ModuleNotFoundError: No module named 'vllm'
+W0321 21:04:07.157000 22459012233024 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 18150 closing signal SIGTERM
+W0321 21:04:07.158000 22459012233024 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 18152 closing signal SIGTERM
+W0321 21:04:07.158000 22459012233024 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 18153 closing signal SIGTERM
+E0321 21:04:07.372000 22459012233024 torch/distributed/elastic/multiprocessing/api.py:833] failed (exitcode: 1) local_rank: 1 (pid: 18151) of binary: /jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/bin/python
+Traceback (most recent call last):
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 133, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/jet/home/qwang20/miniconda3/envs/open_r1_mm_fix/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+src/open_r1/grpo_vllm.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-03-21_21:04:07
+  host      : w004.ib.bridges2.psc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 18151)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
