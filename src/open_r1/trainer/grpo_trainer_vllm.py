@@ -323,7 +323,8 @@ class Qwen2VLGRPOTrainer(Trainer):
             vllm_device = "auto"
             if vllm_device == "auto":
                 # vllm_device = f"cuda:{self.accelerator.num_processes - 1}"  # take the next GPU idx
-                vllm_device = "cuda:7"
+                # Now use 4 gpus!!!!!!!!!!!!!
+                vllm_device = "cuda:3"
             # Check that the requested device is available
             if vllm_device.split(":")[0] == "cuda" and int(vllm_device.split(":")[1]) >= torch.cuda.device_count():
                 raise ValueError(

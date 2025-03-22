@@ -28,10 +28,10 @@ if [ -f "$LOG_FILE" ]; then
 fi
 
 export HF_HOME=/ocean/projects/cis210027p/qwang20/open-r1-multimodal
-
+export CUDA_VISIBLE_DEVICES=0,1,2,3
 
 torchrun \
-    --nproc_per_node="4" \
+    --nproc_per_node="3" \
     --nnodes="${NNODES}" \
     --node_rank="${NODE_RANK}" \
     --master_addr="${MASTER_ADDR}" \
